@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE WHITE HOUSE | Prestige Cleaning & Maintenance</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background-color: #0d0d0d;
+      overflow-x: hidden;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.55);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+    .hero img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #f5d67b;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #f1f1f1;
+    }
+    .btn {
+      background-color: #f5d67b;
+      color: #000;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #fff;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* BENEFITS */
+    .benefits, .services, .testimonials, .cta, footer {
+      padding: 80px 15%;
+      text-align: center;
+    }
+    h2.section-title {
+      font-size: 2rem;
+      color: #f5d67b;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+    .card:hover {
+      background: #222;
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #f5d67b;
+      margin-bottom: 15px;
+    }
+    .card p {
+      color: #ddd;
+      font-size: 0.95rem;
+    }
+
+    /* SERVICES IMAGES */
+    .service img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    /* CTA FINAL */
+    .cta {
+      background: linear-gradient(90deg, #f5d67b, #e3b949);
+      color: #000;
+      padding: 100px 15%;
+      border-radius: 0;
+    }
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .cta button {
+      background-color: #000;
+      color: #f5d67b;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .cta button:hover {
+      background-color: #333;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0d0d0d;
+      color: #bbb;
+      font-size: 0.9rem;
+    }
+    .socials {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .socials a {
+      color: #f5d67b;
+      font-size: 1.4rem;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    .socials a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="https://raw.githubusercontent.com/anrrea-paz/LANDIGwithPERSO/main/logo_thewhitehouse.png" alt="The White House Logo" />
+      <h1>Your time is gold, we shine and uphold</h1>
+      <p>Comprehensive cleaning and maintenance for homes, facades, gutters, and vehicles.</p>
+      <button class="btn">Request Your Service</button>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits">
+    <h2 class="section-title">Why Choose Us</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Comprehensive Service</h3>
+        <p>A single operation that delivers impeccable results across your property and vehicles.</p>
+      </div>
+      <div class="card">
+        <h3>Preventive & Aesthetic Care</h3>
+        <p>We preserve your property’s value and beauty, preventing costly damage.</p>
+      </div>
+      <div class="card">
+        <h3>Flexibility & Convenience</h3>
+        <p>Our team adapts to your schedule with discretion and efficiency.</p>
+      </div>
+      <div class="card">
+        <h3>Trust & Professionalism</h3>
+        <p>Qualified experts following clear protocols for guaranteed peace of mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="grid">
+      <div class="card service">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Facade Cleaning">
+        <h3>Facade Cleaning</h3>
+        <p>Restore your home’s exterior to perfection with expert cleaning solutions.</p>
+      </div>
+      <div class="card service">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Gutter Maintenance">
+        <h3>Gutter Maintenance</h3>
+        <p>Prevent damage and keep your gutters free from debris and obstructions.</p>
+      </div>
+      <div class="card service">
+        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80" alt="Vehicle Detailing">
+        <h3>Vehicle Detailing</h3>
+        <p>Luxury-level care that restores your vehicle’s shine, inside and out.</p>
+      </div>
+      <div class="card service">
+        <img src="https://images.unsplash.com/photo-1600585154154-1787b9d9bca4?auto=format&fit=crop&w=800&q=80" alt="General Property Care">
+        <h3>General Property Care</h3>
+        <p>Keep your entire environment spotless, safe, and in top condition.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="grid">
+      <div class="card">
+        <p>“My home hasn’t looked this good in years! The team was professional and efficient.”</p>
+        <h3>— Sarah W.</h3>
+      </div>
+      <div class="card">
+        <p>“Excellent service and attention to detail. Highly recommend The White House!”</p>
+        <h3>— James L.</h3>
+      </div>
+      <div class="card">
+        <p>“Reliable, clean, and trustworthy. A premium experience from start to finish.”</p>
+        <h3>— Olivia R.</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <h2>Ready to Experience the Gold Standard of Clean?</h2>
+    <button>Get a Quote</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 THE WHITE HOUSE. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+    </div>
+  </footer>
+</body>
+</html>
